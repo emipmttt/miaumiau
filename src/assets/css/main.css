@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "dogica";
+  src: url("../fonts/dogicapixel.otf")
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: dogica;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: initial
+}
+
+.row,
+.row-responsive {
+  display: flex;
+}
+
+.row .col,
+.row-responsive .col {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+
+  .row-responsive {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+img {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
